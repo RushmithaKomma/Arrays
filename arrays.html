@@ -1,0 +1,78 @@
+<html>
+    <body>
+
+    <script>
+
+// Arrays are used to store the list of items in a single variable
+
+var names = ["Rushmitha","Jashmitha","Hithesh","Srikanth"];
+var no = ['1','2','3','4','5','6'];
+
+console.log(names);
+console.log(no);
+
+// It represents the type of an object in an array
+
+console.log("name is a:",typeof(names));
+
+console.log(typeof(no));
+
+// print the value in the array with index
+
+
+console.log(names[1]);
+
+//Reverse the string
+
+console.log(names.reverse());
+
+//join method
+
+console.log(no.join(""));
+
+//to add one or more srings in the array we use push method
+//to remove we use pop method
+
+var emptyArray = [];
+
+emptyArray.push("Rushmitha");
+emptyArray.push("Jashmitha");
+emptyArray.push("Hithesh");
+emptyArray.push("Latha");
+
+console.log("After adding the list", emptyArray);
+
+// Pop to remove
+emptyArray.pop("Latha");
+
+console.log("Afterremoving one object",emptyArray);
+
+
+// Concat method used to combine both the arrays
+
+var a = [1,2,3,4,5]
+var b = [6,7,8,9,10]
+var c = a.concat(b);
+console.log(c);
+//Fill method
+console.log(c.fill("Sravan",1,2));
+
+//includes method
+
+console.log(names.includes("Hithesh"));
+
+//sort is used to list in alphabatical order
+
+console.log(names.sort());
+
+
+//flat
+
+var array = [[1,2,3],[4,5,6],[7,8,9]];
+var newArray = array.flat();
+console.log(newArray);
+
+    </script>
+    </body>
+</html>
+
